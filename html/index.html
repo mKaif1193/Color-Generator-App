@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <link href="../css/output.css" rel="stylesheet" />
+    <style>
+      .mainContent {
+        background: rgba(255, 255, 255, 0.17);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.8px);
+        -webkit-backdrop-filter: blur(3.8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      #changeColorBtn:hover {
+        background: rgba(255, 255, 255, 0.4);
+      }
+    </style>
+  </head>
+  <body class="bg-red-400 h-[100vh] flex flex-col items-center">
+    <div
+      class="mainContent min-h-96 min-w-[50%] mt-10 flex items-center justify-center flex-col gap-8 font-mono tracking-wide text-white"
+    >
+      <h1 class="md:text-6xl sm:text-3xl font-bold mx-4 my-2">
+        Color Generator
+      </h1>
+
+      <div id="box" class="">
+        <div id="colorCode" class="md:text-3xl sm:text-xl mb-3"></div>
+
+        <button
+          id="changeColorBtn"
+          class="mainContent md:text-xl sm:text-lg md:py-2 md:px-3 md:my-3 py-1 px-3 my-2"
+        >
+          Change Color
+        </button>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
